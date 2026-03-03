@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - PINKO SA</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <style>
+        :root {
+            --primary: #4a2c2a;
+            --secondary: #7a4a3a;
+            --accent: #c8a45c;
+            --bg-light: #faf7f2;
+            --bg-white: #ffffff;
+            --text-dark: #3a2a28;
+            --text-gray: #7a6a68;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: var(--text-dark);
+            background: var(--bg-light);
+        }
+
+        /* Header */
+        .header {
+            background: var(--primary);
+            color: white;
+            padding: 1.2rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .header-inner {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            text-decoration: none;
+            color: white;
+        }
+
+        .header-brand svg {
+            width: 36px;
+            height: 36px;
+            color: var(--accent);
+        }
+
+        .header-brand span {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 1.4rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .header-back {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .header-back:hover {
+            color: white;
+        }
+
+        /* Content */
+        .page-content {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem;
+        }
+
+        .policy-card {
+            background: white;
+            border-radius: 6px;
+            padding: 2.5rem;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+            border-bottom: 4px solid var(--accent);
+        }
+
+        .policy-heading {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+        }
+
+        .policy-updated {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .policy-intro-box {
+            background: var(--bg-light);
+            padding: 1.2rem 1.5rem;
+            border-left: 3px solid var(--accent);
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .block {
+            margin-bottom: 1.8rem;
+        }
+
+        .block-title {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 1.25rem;
+            color: var(--primary);
+            margin-bottom: 0.8rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+        }
+
+        .block p {
+            margin-bottom: 0.8rem;
+            color: var(--text-dark);
+        }
+
+        .block ul {
+            margin: 0.8rem 0 0.8rem 1.5rem;
+            color: var(--text-dark);
+        }
+
+        .block ul li {
+            margin-bottom: 0.4rem;
+        }
+
+        .block ul li::marker {
+            color: var(--accent);
+        }
+
+        .email-ref {
+            color: var(--secondary);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .email-ref:hover {
+            color: var(--accent);
+        }
+
+        .info-panel {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin-top: 1.5rem;
+        }
+
+        .info-panel h4 {
+            color: var(--accent);
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        .info-panel p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 0.3rem;
+        }
+
+        .acceptance-banner {
+            margin-top: 2rem;
+            padding: 1.2rem;
+            text-align: center;
+            background: rgba(200, 164, 92, 0.1);
+            border: 1px dashed var(--accent);
+            border-radius: 6px;
+            font-weight: 500;
+            color: var(--primary);
+        }
+
+        /* Footer */
+        .page-footer {
+            background: var(--primary);
+            color: rgba(255,255,255,0.6);
+            text-align: center;
+            padding: 1.2rem;
+            font-size: 0.85rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .policy-card {
+                padding: 1.5rem 1.2rem;
+            }
+            .policy-heading {
+                font-size: 1.7rem;
+            }
+            .header-inner {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="header-brand">
+                <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 5 C25 5 23 15 23 25 C23 35 25 45 25 45" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    <path d="M25 12 C20 8 15 10 14 14 C13 18 18 20 25 18" fill="currentColor" opacity="0.7"/>
+                    <path d="M25 12 C30 8 35 10 36 14 C37 18 32 20 25 18" fill="currentColor" opacity="0.5"/>
+                    <path d="M25 20 C19 16 13 18 12 23 C11 28 17 30 25 27" fill="currentColor" opacity="0.7"/>
+                    <path d="M25 20 C31 16 37 18 38 23 C39 28 33 30 25 27" fill="currentColor" opacity="0.5"/>
+                    <path d="M25 29 C20 25 15 27 14 31 C13 35 18 37 25 35" fill="currentColor" opacity="0.7"/>
+                    <path d="M25 29 C30 25 35 27 36 31 C37 35 32 37 25 35" fill="currentColor" opacity="0.5"/>
+                </svg>
+                <span>PINKO SA</span>
+            </a>
+            <a href="index.html" class="header-back">&larr; Volver al inicio</a>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="policy-card">
+            <h1 class="policy-heading">Política de Privacidad</h1>
+            <p class="policy-updated">Vigente desde marzo 2025</p>
+
+            <div class="policy-intro-box">
+                PINKO SA, con sede en Bartolomé Mitre 805, Morón (CP 1708), Provincia de Buenos Aires, Argentina, es responsable del tratamiento de los datos personales recopilados mediante su sitio web y canales de comunicación digital, incluyendo WhatsApp Business API.
+                <br><br>
+                Este documento describe de forma transparente cómo gestionamos la información personal de nuestros usuarios y contactos.
+            </div>
+
+            <div class="block">
+                <h2 class="block-title">Información que recopilamos</h2>
+                <p>Al interactuar con nuestros canales digitales, podemos recopilar:</p>
+                <ul>
+                    <li>Nombre completo</li>
+                    <li>Teléfono de contacto</li>
+                    <li>Correo electrónico</li>
+                    <li>Dirección IP y datos de navegación</li>
+                    <li>Datos de interacción con mensajes enviados</li>
+                </ul>
+                <p>Estos datos se obtienen exclusivamente cuando el usuario los brinda de forma voluntaria.</p>
+            </div>
+
+            <div class="block">
+                <h2 class="block-title">Para qué usamos sus datos</h2>
+                <p>La información recopilada se utiliza con las siguientes finalidades:</p>
+                <ul>
+                    <li>Gestionar consultas comerciales y brindar soporte</li>
+                    <li>Informar sobre nuestros productos y servicios agropecuarios</li>
+                    <li>Enviar comunicaciones operativas relevantes</li>
+                    <li>Dar cumplimiento a obligaciones legales vigentes</li>
+                </ul>
+                <p>No utilizaremos sus datos para fines diferentes a los indicados sin su consentimiento previo.</p>
+            </div>
+
+            <div class="block">
+                <h2 class="block-title">Comunicaciones vía WhatsApp</h2>
+                <p>PINKO SA emplea la plataforma WhatsApp Business API, provista por Meta Platforms Inc., como canal de comunicación con clientes y contactos.</p>
+                <p>El uso de este canal se rige adicionalmente por las políticas de privacidad de Meta. PINKO SA únicamente accede a la información estrictamente necesaria para la comunicación.</p>
+            </div>
+
+            <div class="block">
+                <h2 class="block-title">Protección y almacenamiento</h2>
+                <p>Implementamos medidas técnicas y organizativas adecuadas para resguardar los datos personales frente a accesos indebidos, pérdida o alteración.</p>
+                <p>La información se conserva por el período necesario para cumplir con la finalidad declarada o según lo exija la normativa aplicable.</p>
+            </div>
+
+            <div class="block">
+                <h2 class="block-title">Transferencia a terceros</h2>
+                <p>PINKO SA no cede, vende ni comparte datos personales con terceros, salvo requerimiento de autoridad competente o cuando exista obligación legal.</p>
+            </div>
+
+            <div class="block">
+                <h2 class="block-title">Sus derechos</h2>
+                <p>Como titular de los datos, usted tiene derecho a:</p>
+                <ul>
+                    <li>Conocer qué datos personales tenemos registrados</li>
+                    <li>Solicitar la corrección de información inexacta</li>
+                    <li>Pedir la supresión de sus datos</li>
+                    <li>Oponerse o limitar el tratamiento de su información</li>
+                </ul>
+                <p>Para ejercer cualquiera de estos derechos, escriba a: <a href="mailto:info@pinkosa.com" class="email-ref">info@pinkosa.com</a></p>
+            </div>
+
+            <div class="block">
+                <h2 class="block-title">Solicitud de eliminación</h2>
+                <p>Si desea que eliminemos sus datos de nuestros sistemas, envíe un correo a <a href="mailto:info@pinkosa.com" class="email-ref">info@pinkosa.com</a> indicando en el asunto "Baja de datos personales".</p>
+                <p>Procesaremos su solicitud en un plazo no mayor a 10 días hábiles.</p>
+            </div>
+
+            <div class="block">
+                <h2 class="block-title">Actualizaciones de esta política</h2>
+                <p>Nos reservamos la facultad de actualizar esta Política de Privacidad. Toda modificación entrará en vigencia a partir de su publicación en este sitio.</p>
+            </div>
+
+            <div class="block">
+                <h2 class="block-title">Datos de contacto</h2>
+                <p>Ante cualquier duda o consulta sobre esta política:</p>
+                <div class="info-panel">
+                    <h4>PINKO SA</h4>
+                    <p><strong>Dirección:</strong> Bartolomé Mitre 805, Morón (CP 1708), Buenos Aires</p>
+                    <p><strong>Email:</strong> info@pinkosa.com</p>
+                    <p><strong>Teléfono:</strong> +54 11 5810-7167</p>
+                </div>
+            </div>
+
+            <div class="acceptance-banner">
+                Al utilizar nuestros servicios y canales digitales, usted manifiesta su conformidad con los términos de esta Política de Privacidad.
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <p>&copy; 2025 PINKO SA. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
